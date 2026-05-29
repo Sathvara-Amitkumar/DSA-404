@@ -13,7 +13,37 @@ public class character_pattern {
         // }
 
 
-        
+        // for (int i=1; i<=n; i++) {
+        //     char ch = 'E';
+        //     for(int j=1; j<=i; j++) {
+        //         System.out.print(ch + " ");
+        //         ch--;
+        //     }
+        //     System.out.println();
+        // }
+
+
+        // character pyramid
+        for(int i=1; i<=n; i++) {
+            char ch = 'A';
+
+            for(int j=1; j<=n-i; j++) {
+                System.out.print("  ");
+            }
+
+            for(int j=1; j<=i; j++) {
+                System.out.print(ch + " ");
+                ch++;
+            }
+
+            char c = (char)('A' + i - 2);
+            for(int j=1; j<=i-1; j++) {
+                System.out.print(c + " ");
+                c--; 
+            }
+
+            System.out.println();
+        }
 
     }
 }
